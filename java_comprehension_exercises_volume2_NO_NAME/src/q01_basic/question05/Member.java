@@ -1,16 +1,6 @@
-package q01_basic.question04;
+package q01_basic.question05;
 
-class Member {
-	//TODO ここから実装する
-	private String name;
-
-	public String getName() {
-		return name;
-	}
-
-	public void setName(String name) {
-		this.name = name;
-	}
+public class Member extends AbstMember {
 
 	public int getAge() {
 		return age;
@@ -42,7 +32,6 @@ class Member {
 
 	public void setPassword(String password) {
 		this.password = password;
-
 	}
 
 	private int age;
@@ -64,6 +53,7 @@ class Member {
 
 	}
 
+	@Override
 	public void showMember() {
 		System.out.println("***MEMBER DATA***");
 		System.out.println("id:" + id);
@@ -72,6 +62,12 @@ class Member {
 		System.out.println("age:" + age++);
 		System.out.println("rank:" + rank++);
 		System.out.println("*****************");
+	}
+
+	@Override
+	public void buyItem() {
+		System.out.println("Sato Kensuke purchased the item at a fixed price");
+		System.out.println("MIura Manabu purchased the item at 50% off");
 	}
 
 }

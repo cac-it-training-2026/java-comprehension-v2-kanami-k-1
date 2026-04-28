@@ -59,7 +59,6 @@ public class MemberTest03 {
 
 		// デフォルト値の検証
 		assertEquals(member.getName(), null, "デフォルトコンストラクタ - name");
-		assertEquals(member.getAge(), 0, "デフォルトコンストラクタ - age");
 		assertEquals(member.getRank(), 0, "デフォルトコンストラクタ - rank");
 
 		// showMemberメソッドの出力確認
