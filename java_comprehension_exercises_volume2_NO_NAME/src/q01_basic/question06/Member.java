@@ -1,6 +1,10 @@
-package q01_basic.question05;
+package q01_basic.question06;
 
 public class Member extends AbstMember {
+	private int age;
+	private int rank;
+	private int id;
+	private String password;
 
 	public int getAge() {
 		return age;
@@ -34,13 +38,7 @@ public class Member extends AbstMember {
 		this.password = password;
 	}
 
-	private int age;
-	private int rank;
-	private int id;
-	private String password;
-
 	public Member() {
-		// TODO 自動生成されたコンストラクター・スタブ
 		super();
 	}
 
@@ -55,6 +53,15 @@ public class Member extends AbstMember {
 	}
 
 	@Override
+	public void buyItem() {
+		if (rank == 2) {
+			System.out.println(name + "purchased the item at 50% off");
+		} else {
+			System.out.println(name + "purchased the item");
+		}
+	}
+
+	@Override
 	public void showMember() {
 
 		System.out.println("***MEMBER DATA***");
@@ -64,12 +71,6 @@ public class Member extends AbstMember {
 		System.out.println("age:" + age++);
 		System.out.println("rank:" + rank++);
 		System.out.println("*****************");
-	}
-
-	@Override
-	public void buyItem() {
-
-		System.out.println(name + " purchased the item at 50% off");
 	}
 
 }
