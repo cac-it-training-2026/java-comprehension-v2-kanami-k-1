@@ -33,16 +33,16 @@ class Member {
 	public void showMember() {
 		System.out.println("***MEMBER DATA***");
 		System.out.println("name:" + name);
-		System.out.println("age:" + age++);
-		System.out.println("rank:" + rank++);
+		System.out.println("age:" + age);
+		System.out.println("rank:" + rank);
 		System.out.println("*****************");
 	}
 
 	public void rankUp() {
-		int rankup = +rank;
+		rank++;
 		System.out.println(">>>RANK UP>>>");
 		System.out.println("---GET RANK===");
-		System.out.println("newRank:" + rankup);
+		System.out.println("newRank:" + rank);
 	}
 
 }

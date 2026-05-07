@@ -10,8 +10,5 @@ public class SystemMain02 {
 		member1.setAge(30);
 		member1.setRank(1);
 
-		member1.showMember();
-		member1.rankUp();
-
 	}
 }
